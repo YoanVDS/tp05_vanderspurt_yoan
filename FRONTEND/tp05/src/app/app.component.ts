@@ -10,6 +10,6 @@ import { User } from './user.state.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tp04';
+  title = 'tp05';
   @Select(UserState.GetLoggedUser) loggedUser$: Observable<User>;
 }

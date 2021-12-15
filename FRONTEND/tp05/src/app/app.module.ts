@@ -19,11 +19,16 @@ import { UserState } from './user.state';
 import { AddressesComponent } from './addresses/addresses.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ApiHttpInterceptor } from './api-http-interceptor';
+import { ConnectionScreenComponent } from './connection-screen/connection-screen.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: FormComponent
+  },
+  {
+    path: 'login',
+    component: ConnectionScreenComponent
   },
   {
     path: 'basket',
@@ -55,7 +60,8 @@ const appRoutes: Routes = [
     RecapComponent,
     PhonePipe,
     AddressesComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ConnectionScreenComponent
   ],
   imports: [
     BrowserModule,
